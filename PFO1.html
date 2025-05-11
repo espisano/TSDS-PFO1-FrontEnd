@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="profile-image">
+                <img src="assets/placeholder-profile.jpg" alt="Ernesto Salvador Pisano">
+            </div>
+            <div class="profile-info">
+                <h2>Ernesto Salvador Pisano</h2>
+                <p class="title">Developer</p>
+
+                <h2>Tecnologias:</h2>
+                <table>
+                   
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                        </tr>
+                    </tbody>
+                </table>
+                                <h2>Contacto</h2>
+<! -- Formulario de contacto proximo a funcionar -->
+                <form class="contact-form" action="#" method="POST">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://github.com/espisano/"><img src="assets/github-icon.png" alt="Github"></a>
+                    <a href="#"><img src="assets/linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>Desarrollador de software, enfocado en el desarrollo web.
+                    Estoy familiarizado con tecnologías de Microsoft y algunos frameworks de Javascript. Me apasiona
+                    automatizar tareas y simplificar procesos. Siempre dispuesto a cambiar, aprender e innovar, y
+                    trabajar junto a grandes equipos.</p>
+                    
+                <div class="buttons">
+                    <button class="resume-button">Curriculum</button> <! -- Proximamente se podra bajar un PDF con el CV de acá -->
+                    <button class="portfolio-button">Portfolio</button> <! -- Proximamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
