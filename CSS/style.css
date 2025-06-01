@@ -1,0 +1,562 @@
+/*///////////////// AJUSTES GENERALES //////////////////*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0056b3;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+}
+
+/*///////////////// HEADER Y NAVEGACIÓN //////////////////*/
+.main-header {
+    width: 100%;
+    background-color: #333;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #007bff;
+}
+
+/*///////////////// CONTENEDOR PRINCIPAL //////////////////*/
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90vw;
+    max-width: 1200px;
+    margin: 3rem auto;
+    min-height: 80vh;
+}
+
+/*///////////////// SECCIÓN IZQUIERDA //////////////////*/
+.left-section {
+    background-color: #fff;
+    padding: 2.5rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.profile-info h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.profile-info h2:first-of-type {
+    margin-top: 0;
+}
+
+.profile-info .title {
+    color: #777;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Tabla de tecnologías */
+.profile-info table {
+    width: 80%;
+    margin: 1.5rem auto 2.5rem auto;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.profile-info table td {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    color: #555;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-info table tr:last-child td {
+    border-bottom: none;
+}
+
+.profile-info table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.profile-info table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+/* Formulario de contacto */
+.contact-form {
+    margin-top: 2rem;
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form>div {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form .submit-button:hover {
+    background-color: #0056b3;
+}
+
+.social-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    opacity: 1;
+}
+
+/*///////////////// SECCIÓN DERECHA //////////////////*/
+.right-section {
+    background-color: #b7dfff93;
+    padding: 2.5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.about-me {
+    margin-bottom: 2rem;
+}
+
+.about-me h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.about-me p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.about-me .buttons {
+    margin-top: 2rem;
+}
+
+.about-me .buttons button,
+.about-me .buttons a {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about-me .buttons button:hover,
+.about-me .buttons a:hover {
+    background-color: #666;
+}
+
+.what-i-do {
+    margin-top: 2rem;
+}
+
+.what-i-do h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.service-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1 1 calc(50% - 1.5rem);
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    min-width: 280px;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #007bff;
+}
+
+.service-card h3 i {
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/*///////////////// RESPONSIVIDAD //////////////////*/
+
+@media (max-width: 1080px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 95vw;
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .nav-list {
+        gap: 1.5rem;
+    }
+
+    .profile-info table {
+        width: 90%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+
+    .service-card {
+        flex: 1 1 calc(100% - 1.5rem);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-header {
+        padding: 1rem 0;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+    }
+
+    .container {
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 1.5rem;
+    }
+
+    .profile-info h2,
+    .about-me h1,
+    .what-i-do h1 {
+        font-size: 2rem;
+    }
+
+    .about-me p {
+        font-size: 0.9rem;
+    }
+
+    .about-me .buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .about-me .buttons button,
+    .about-me .buttons a {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .service-card {
+        padding: 1.2rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobil 1 */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    .main-header {
+        padding: 0.8rem 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .nav-list li a {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        width: 98vw;
+        margin: 1rem auto;
+    }
+
+    .left-section,
+    .right-section {
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-info h2,
+    .about-me h1,
+    .what-i-do h1 {
+        font-size: 1.7rem;
+    }
+
+    .profile-info .title {
+        font-size: 0.85rem;
+    }
+
+    .profile-info table {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form label {
+        font-size: 0.8rem;
+    }
+
+    .contact-form input,
+    .contact-form .submit-button {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .service-card {
+        padding: 1rem;
+        flex: 1 1 100%;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-card p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobil 2 */
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+
+    .nav-list {
+        gap: 0.5rem;
+    }
+
+    .nav-list li a {
+        font-size: 0.85rem;
+    }
+
+    .profile-info h2,
+    .about-me h1,
+    .what-i-do h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p {
+        font-size: 0.8rem;
+    }
+
+    .about-me .buttons button,
+    .about-me .buttons a {
+        padding: 0.7rem 1rem;
+        font-size: 0.85rem;
+    }
+}
